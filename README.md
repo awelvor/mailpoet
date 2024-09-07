@@ -1,0 +1,2 @@
+# mailpoet
+anti-spam procedure
