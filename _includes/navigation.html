@@ -1,9 +1,12 @@
 <div class="container">
-<nav>
+  <p>site.url  {{site.url}}</p>
+<nav class="wrapper">
+<ul class="nav mt-5">
   {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
-      {{ item.name }}
-    </a>
+  <li class="nav-item"><a class="nav-link active" href="{{site.url}}/{{site.title}}/{{item.link}}">{{item.name}}</a></li>
   {% endfor %}
+  </ul>
 </nav>
+
+
 </div>
